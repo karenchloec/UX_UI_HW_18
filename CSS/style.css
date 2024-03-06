@@ -1,0 +1,60 @@
+
+.flexContainer {
+    display:flex;
+    width:fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: pink;
+}
+
+.skill1, .skill2, .skill3, .skill4, .skill5, .skill6 {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #FFF2BE;
+}
+
+.first, .second, .third {
+    margin: 15px;
+    padding: 5px;
+}
+
+.workGrid {
+    display: flex;
+    background: lightblue;
+    justify-content: flex-start;
+    width: fit-content;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+
+/* images */
+img {
+    height: 150px;
+    width: auto;
+}
+
+.logo {
+    height: auto;
+    width: 100px;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #311848;
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #EAC73C;
+}
