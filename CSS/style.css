@@ -1,4 +1,52 @@
+/*header*/
+.mainlogo {
+    height: 75px;
+}
 
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.mainlogo {
+    margin-right: 20px;
+    width: 23%;
+    padding: 1%;
+}
+
+.nav menu {
+    list-style-type: none;
+    margin-left: auto;
+    
+}
+
+.nav-menu li {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+.nav-menu li a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set link color */
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.navigation {
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+/*stuff*/
 .flexContainer {
     display:flex;
     width:fit-content;
@@ -39,7 +87,7 @@ img {
 
 .logo {
     height: auto;
-    width: 100px;
+    width: 300px;
 }
 
 button {
