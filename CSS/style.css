@@ -9,7 +9,6 @@
 }
 .mainlogo {
     margin-right: 20px;
-    width: 23%;
     padding: 1%;
 }
 
@@ -46,13 +45,14 @@ ul {
     margin-left: auto;
 }
 
-/*stuff*/
+/*CSS Flex*/
 .flexContainer {
     display:flex;
     width:fit-content;
     height: fit-content;
     padding: 10px;
-    background-color: pink;
+    border: solid black 2px;
+    border-radius: 8px;
 }
 
 .skill1, .skill2, .skill3, .skill4, .skill5, .skill6 {
@@ -71,8 +71,7 @@ body {
 
 .workGrid {
     display: flex;
-    background: lightblue;
-    justify-content: flex-start;
+        justify-content: flex-start;
     width: fit-content;
     height: fit-content;
     align-items: flex-start;
@@ -95,7 +94,7 @@ button {
     font-size: 20px;
     border: 2px solid #000;
     border-radius: 5px;
-    color: #311848;
+    color: black;
     cursor: pointer;
     padding: 10px 10px;
     background-color: transparent;
@@ -105,4 +104,18 @@ button {
 
 button:hover {
     background-color: #EAC73C;
+}
+
+
+.workGrid {
+    display: grid;
+    grid-template-rows: auto; 
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    border: solid 2px;
+    border-radius: 8px;
+}
+
+.first, .second, .third {
+    padding: 20px;
 }
