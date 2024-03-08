@@ -119,3 +119,84 @@ button:hover {
 .first, .second, .third {
     padding: 20px;
 }
+
+/*media query*/
+
+@media only screens and (max-width: 600px) {
+    
+    .flexContainer {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .workGrid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .first, .second, .third {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+    .myskills .flexContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .myskills .skill1,
+    .myskills .skill2,
+    .myskills .skill3,
+    .myskills .skill4,
+    .myskills .skill5,
+    .myskills .skill6 {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Flex Container to Column */
+    .flexContainer {
+        flex-direction: column;
+        padding: 0; /* Adjust padding for better spacing */
+    }
+
+    /* Flex Children to Full Width */
+    .skill1,
+    .skill2,
+    .skill3,
+    .skill4,
+    .skill5,
+    .skill6 {
+        width: 100%;
+        margin: 0; /* Reset margin */
+        padding: 10px; /* Add padding */
+    }
+
+    /* Grid Container for My Works */
+    .workGrid {
+        display: grid;
+        grid-template-areas:
+            "first"
+            "second"
+            "third";
+        grid-template-rows: auto; /* Let the rows adjust automatically */
+        grid-template-columns: 1fr; /* Display one column */
+        gap: 20px; /* Add gap between items */
+        padding: 20px; /* Adjust padding */
+    }
+
+    /* Grid Items */
+    .first, .second, .third {
+        padding: 20px;
+    }
+}
+
